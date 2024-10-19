@@ -1,6 +1,7 @@
 import 'package:flixgo/core/common/widgets/app_button/primary_button.dart';
 import 'package:flixgo/core/constant/constant.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class OnboardView extends StatefulWidget {
   const OnboardView({super.key});
@@ -36,7 +37,7 @@ class _OnboardViewState extends State<OnboardView> {
 
   void _onTap() {
     if (_currentPage == (_imageAssets.length - 1)) {
-      // navigate login
+      context.go("/sign-in");
     } else {
       _pageController.nextPage(
         duration: const Duration(milliseconds: 500),

@@ -8,6 +8,7 @@ class AppRouter {
   AppRouter();
 
   final router = GoRouter(
+    debugLogDiagnostics: true,
     initialLocation: "/onboarding",
     routes: [
       // Onboard route

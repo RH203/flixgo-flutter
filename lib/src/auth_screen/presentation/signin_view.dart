@@ -1,3 +1,4 @@
+import 'package:flixgo/core/constant/constant.dart';
 import 'package:flutter/material.dart';
 
 class SigninView extends StatelessWidget {
@@ -6,8 +7,13 @@ class SigninView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppConstants.darkColor,
       body: Column(
-        children: <Widget>[],
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          Image.asset(AppConstants.marvelLogo),
+        ],
       ),
     );
   }
