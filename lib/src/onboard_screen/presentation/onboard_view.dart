@@ -25,7 +25,7 @@ class _OnboardViewState extends State<OnboardView> {
     "All your favourite\n MARVEL Movies & Series\n at one place",
     "Watch Online\n or\n Download Offline",
     "Create profiles for\n diffrent members &\n get personalised\n recommendations",
-    "Plans according to your\n needs at affordable\nj prices",
+    "Plans according to your\n needs at affordable\n prices",
     "Let’s Get Started !!!"
   ];
 
