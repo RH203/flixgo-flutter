@@ -101,13 +101,18 @@ class _OnboardViewState extends State<OnboardView> {
                   left: 20,
                   right: 20,
                   child: PrimaryButton(
-                    title: _currentPage == (_imageAssets.length - 1)
-                        ? "Get Started"
-                        : "Continue",
+                    widgetButton: Text(
+                      _currentPage == (_imageAssets.length - 1)
+                          ? "Get Started"
+                          : "Continue",
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     onTap: _onTap,
                     backgroundButton: AppConstants.primaryColor,
-                    textColor: Colors.white,
-                    fontWeight: FontWeight.bold,
                   ),
                 ),
               ],

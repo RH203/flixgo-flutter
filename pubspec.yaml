@@ -19,6 +19,7 @@ dependencies:
   get_it:
   go_router:
   logger:
+  
 
 dev_dependencies:
   flutter_test:

@@ -1,26 +1,21 @@
-import 'package:flixgo/core/constant/constant.dart';
 import 'package:flutter/material.dart';
 
 class PrimaryButton extends StatelessWidget {
   const PrimaryButton({
     super.key,
-    required this.title,
-    required this.textColor,
-    required this.backgroundButton,
-    required this.fontWeight,
+    required this.widgetButton,
     required this.onTap,
+    required this.backgroundButton,
     this.height = 70,
     this.width = 300,
-    this.fontSize = 28,
     this.enableFeedback = false,
   });
 
-  final String title;
-  final double height, width, fontSize;
-  final Color textColor, backgroundButton;
-  final FontWeight fontWeight;
+  final Color backgroundButton;
+  final double height, width;
   final void Function() onTap;
   final bool enableFeedback;
+  final Widget widgetButton;
 
   @override
   Widget build(BuildContext context) {
@@ -34,14 +29,7 @@ class PrimaryButton extends StatelessWidget {
           width: width,
           alignment: Alignment.center,
           color: backgroundButton,
-          child: Text(
-            title,
-            style: TextStyle(
-              color: textColor,
-              fontSize: fontSize,
-              fontWeight: fontWeight,
-            ),
-          ),
+          child: widgetButton,
         ),
       ),
     );
